@@ -43,7 +43,7 @@ provider "aws" {
     region = "us-west-1"
     default_tags {
     tags = {
-        Managedby               = "Albert Workspace 10/2024"
+        Managedby               = "Albert VPC Peering 10/2024"
         TerraformWorkspace      = terraform.workspace
     }
   }
