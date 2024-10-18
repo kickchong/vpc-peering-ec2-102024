@@ -1,4 +1,4 @@
-name: Establish
+name: Establish Environment
 
 on:
   push:

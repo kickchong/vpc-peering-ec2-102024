@@ -2,7 +2,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.8.1"
 
-  name = "ec2-vpc"
+  name = "vpc-peering-ec2-vpc"
 
   cidr = "10.240.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 2)
@@ -29,7 +29,7 @@ module "vpc2" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.8.1"
 
-  name = "ec2-vpc-2"
+  name = "vpc-peering-ec2-vpc-2"
 
   cidr = "10.248.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 2)
